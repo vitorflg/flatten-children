@@ -1,15 +1,14 @@
 {
-  "name": "react-flatten-children",
-  "description": "React utility to flatten fragments.",
+  "name": "flatten-children",
+  "description": "React for flattening all levels of a children",
   "keywords": [
     "react",
     "utility",
     "children",
-    "flatten",
-    "fragment"
+    "flatten"
   ],
   "version": "1.0.0",
-  "author": "Greg Bergé <berge.greg@gmail.com>",
+  "author": "Vitor Gomes <berge.greg@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",

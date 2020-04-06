@@ -1,13 +1,17 @@
 import React from 'react'
 
-function flattenChildren(children) {
-  return React.Children.toArray(children).reduce((flatChildren, child) => {
-    if (child.type === React.Fragment) {
-      return flatChildren.concat(flattenChildren(child.props.children))
+const flattenChildren = (children) => {
+  let flattedChildren = [];
+
+  children.map(node => {
+    if(node.props.children){
+      flattedChildren.push(...flattenChildren(node.props.children));
+    } else {
+      flattedChildren.push(node);
     }
-    flatChildren.push(child)
-    return flatChildren
-  }, [])
+  })
+  
+  return flattedChildren;
 }
 
 export default flattenChildren
