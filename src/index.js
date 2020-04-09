@@ -6,8 +6,9 @@ const flattenChildren = children => {
 
   isArray &&
     children.map(node => {
-      if (node.props.children) {
-        flattedChildren.push(...flattenChildren(node.props.children));
+      const { props: { children: nodeChildren } = {} } = node;
+      if (nodeChildren) {
+        flattedChildren.push(...flattenChildren(nodeChildren));
       } else {
         flattedChildren.push(node);
       }
