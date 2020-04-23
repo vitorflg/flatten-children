@@ -20,7 +20,7 @@ const flattenChildren = children => {
     if (nodeChildren) {
       return flattedChildren.push(...flattenChildren(nodeChildren));
     } else {
-      return flattedChildren.push(node);
+      return flattedChildren.push(children);
     }
   }
 
