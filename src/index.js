@@ -1,5 +1,13 @@
 import React from 'react';
 
+const addChildrens = (flattedChildren, node, nodeChildren) => {
+  if (nodeChildren) {
+    return flattedChildren.push(...flattenChildren(nodeChildren));
+  } else {
+    return flattedChildren.push(node);
+  }
+};
+
 const flattenChildren = children => {
   let flattedChildren = [];
   const isArray = children && Array.isArray(children);
@@ -8,20 +16,12 @@ const flattenChildren = children => {
     children.map(node => {
       const { props: { children: nodeChildren } = {} } = node;
 
-      if (nodeChildren) {
-        return flattedChildren.push(...flattenChildren(nodeChildren));
-      } else {
-        return flattedChildren.push(node);
-      }
+      addChildrens(flattedChildren, node, nodeChildren);
     });
   } else {
     const { props: { children: nodeChildren } = {} } = children;
 
-    if (nodeChildren) {
-      return flattedChildren.push(...flattenChildren(nodeChildren));
-    } else {
-      return flattedChildren.push(children);
-    }
+    addChildrens(flattedChildren, children, nodeChildren);
   }
 
   return flattedChildren;
