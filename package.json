@@ -7,7 +7,7 @@
     "children",
     "flatten"
   ],
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "Vitor Gomes <berge.greg@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
