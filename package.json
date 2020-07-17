@@ -1,13 +1,8 @@
 {
   "name": "flatten-children",
   "description": "React for flattening all levels of a children",
-  "keywords": [
-    "react",
-    "utility",
-    "children",
-    "flatten"
-  ],
-  "version": "0.1.7",
+  "keywords": ["react", "utility", "children", "flatten"],
+  "version": "0.1.8",
   "author": "Vitor Gomes <berge.greg@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
