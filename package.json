@@ -1,9 +1,9 @@
 {
-  "name": "flatten-children",
-  "description": "React for flattening all levels of a children",
+  "name": "@hyper-english/flatten-children",
+  "description": "React utility for flattening all levels of a children",
   "keywords": ["react", "utility", "children", "flatten"],
-  "version": "0.1.8",
-  "author": "Vitor Gomes <berge.greg@gmail.com>",
+  "version": "0.1.9",
+  "author": "Vitor Gomes <vitorlgomes@hotmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
