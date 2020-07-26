@@ -1,6 +1,6 @@
 {
   "name": "@hyper-english/flatten-children",
-  "description": "React utility for flattening all levels of a children",
+  "description": "React utility for flattening all children levels of a node",
   "keywords": ["react", "utility", "children", "flatten"],
   "version": "0.1.9",
   "author": "Vitor Gomes <vitorlgomes@hotmail.com>",
